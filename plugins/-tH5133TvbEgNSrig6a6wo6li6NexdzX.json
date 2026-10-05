@@ -1,0 +1,864 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "expanded-bookmarks",
+        "version": "1.0.0",
+        "title": "Expanded Bookmarks",
+        "description": "Expanded Bookmarks Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "0.3.9",
+        "author": ""
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "ObjectProperty",
+                    "name": "moreButton",
+                    "source": "More options",
+                    "target": "更多选项"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "showHiddenOn",
+                    "source": "Show hidden bookmarks",
+                    "target": "显示已隐藏的书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "showHiddenOff",
+                    "source": "Stop showing hidden bookmarks",
+                    "target": "不再显示已隐藏的书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "searchFilterButton",
+                    "source": "Show only bookmarked files",
+                    "target": "只显示已加书签的文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "searchExcludeButton",
+                    "source": "Hide bookmarked files",
+                    "target": "隐藏已加书签的文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sort.custom",
+                    "source": "Custom (drag & drop)",
+                    "target": "自定义（拖放调整）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sort.name",
+                    "source": "Name",
+                    "target": "名称"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sort.added",
+                    "source": "Date bookmarked",
+                    "target": "收藏时间"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sort.mtime",
+                    "source": "File modified time",
+                    "target": "文件修改时间"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sort.ctime",
+                    "source": "File created time",
+                    "target": "文件创建时间"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sort.ext",
+                    "source": "File type",
+                    "target": "文件类型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortShort.custom",
+                    "source": "Custom",
+                    "target": "自定义"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortShort.name",
+                    "source": "Name",
+                    "target": "名称"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortShort.added",
+                    "source": "Bookmarked",
+                    "target": "收藏时间"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortShort.mtime",
+                    "source": "Modified",
+                    "target": "修改时间"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortShort.ctime",
+                    "source": "Created",
+                    "target": "创建时间"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortShort.ext",
+                    "source": "Type",
+                    "target": "类型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortAsc",
+                    "source": "Ascending",
+                    "target": "升序"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortDesc",
+                    "source": "Descending",
+                    "target": "降序"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortGroupOverride",
+                    "source": "Sort this group by",
+                    "target": "本组排序方式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "sortGroupDefault",
+                    "source": "Use default sort",
+                    "target": "使用默认排序"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "menuOpen",
+                    "source": "Open",
+                    "target": "打开"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "menuOpenNewTab",
+                    "source": "Open in new tab",
+                    "target": "在新标签页中打开"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "menuEditBookmark",
+                    "source": "Edit bookmark…",
+                    "target": "编辑书签…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "menuRename",
+                    "source": "Rename group",
+                    "target": "重命名书签组"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "menuHighlight",
+                    "source": "Highlight",
+                    "target": "高亮"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "menuHide",
+                    "source": "Hide bookmark",
+                    "target": "隐藏书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "menuUnhide",
+                    "source": "Unhide bookmark",
+                    "target": "取消隐藏书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "menuRemove",
+                    "source": "Remove bookmark",
+                    "target": "移除书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "menuRemoveGroup",
+                    "source": "Remove group",
+                    "target": "移除书签组"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "menuAddBookmark",
+                    "source": "Add to Expanded Bookmarks",
+                    "target": "添加到增强书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "menuReveal",
+                    "source": "Reveal in Expanded Bookmarks",
+                    "target": "在增强书签中定位"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "headerTooltip",
+                    "source": "Edit in Expanded Bookmarks",
+                    "target": "在增强书签中编辑"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "modalTitle",
+                    "source": "Edit Expanded Bookmark",
+                    "target": "编辑书签项"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "fieldOriginalName",
+                    "source": "File",
+                    "target": "文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "fieldBookmarkName",
+                    "source": "Bookmark name",
+                    "target": "书签名称"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "fieldGroup",
+                    "source": "Group",
+                    "target": "书签组"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "fieldGroupNone",
+                    "source": "(No group)",
+                    "target": "（无书签组）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "btnSave",
+                    "source": "Save",
+                    "target": "保存"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "btnDelete",
+                    "source": "Delete bookmark",
+                    "target": "移除书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "batchSelected",
+                    "source": "${r} selected",
+                    "target": "${r} 项已选"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "batchMoveToGroup",
+                    "source": "Move to bookmark group...",
+                    "target": "移动到书签组…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "batchMoveFiles",
+                    "source": "Move actual files to folder...",
+                    "target": "把实际文件移动到文件夹…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "batchRemove",
+                    "source": "Remove",
+                    "target": "移除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "batchCancel",
+                    "source": "Done",
+                    "target": "完成"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "pickGroupPlaceholder",
+                    "source": "Choose a destination bookmark group...",
+                    "target": "选择目标书签组…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "rootGroupName",
+                    "source": "(Top level)",
+                    "target": "（顶层）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "pickFolderPlaceholder",
+                    "source": "Choose a destination folder...",
+                    "target": "选择目标文件夹…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "pickJsonPlaceholder",
+                    "source": "Choose a .json file to import...",
+                    "target": "选择要导入的 .json 文件…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "newGroupPrompt",
+                    "source": "Group name",
+                    "target": "书签组名称"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "renamePrompt",
+                    "source": "New name",
+                    "target": "新名称"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmButton",
+                    "source": "OK",
+                    "target": "确定"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cancelButton",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmFileMoveTitle",
+                    "source": "Move files?",
+                    "target": "移动文件？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmFileMoveBody",
+                    "source": "Move ${r} file(s) to \"${l}\"? This moves real files in your vault. The bookmarks are unchanged — they follow the files.",
+                    "target": "把 ${r} 个文件移动到「${l}」吗？这会移动你库中的真实文件。书签本身不变——它们会跟随文件。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmRemoveGroupTitle",
+                    "source": "Remove group?",
+                    "target": "移除书签组？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmRemoveGroupBody",
+                    "source": "\"${r}\" contains ${l} item(s), which will be removed with it. The files themselves are not deleted.",
+                    "target": "「${r}」里有 ${l} 个条目，会随它一起被移除。文件本身不会被删除。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmRemoveGroupBody",
+                    "source": "Remove the empty group \"${r}\"?",
+                    "target": "要移除空书签组「${r}」吗？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmBatchRemoveTitle",
+                    "source": "Remove bookmarks?",
+                    "target": "移除书签？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmBatchRemoveBody",
+                    "source": "Remove ${r} selected bookmark(s)? Groups take their contents with them. The files themselves are not deleted.",
+                    "target": "要移除选中的 ${r} 个书签吗？书签组会连同其中的内容一起移除。文件本身不会被删除。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmImportTitle",
+                    "source": "Import bookmarks?",
+                    "target": "导入书签？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmImportBody",
+                    "source": "Import from ${r}? Imported items are added on top.",
+                    "target": "要从${r}导入吗？导入的条目会加在最上面。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "importSourceCore",
+                    "source": "the core Bookmarks plugin",
+                    "target": "核心「书签」插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmExportTitle",
+                    "source": "Export bookmarks?",
+                    "target": "导出书签？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "confirmExportBody",
+                    "source": "Save a JSON file to ${r}? Plugin-only details (color, hidden, per-group sort) are not included.",
+                    "target": "要把 JSON 文件保存到${r}吗？仅本插件使用的信息（颜色、隐藏状态、各组排序）不会被包含。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "exportRootLabel",
+                    "source": "the vault root",
+                    "target": "库的根目录"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeImported",
+                    "source": "Imported ${r} bookmark(s) from core Bookmarks",
+                    "target": "已从核心书签导入 ${r} 个书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeImported",
+                    "source": " (${l} unsupported item(s) skipped)",
+                    "target": "（已跳过 ${l} 个不支持的条目）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeImportFailed",
+                    "source": "Core Bookmarks plugin not found or has no data",
+                    "target": "未找到核心「书签」插件，或其中没有数据"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeImportBadFile",
+                    "source": "That file is not a recognized bookmarks JSON",
+                    "target": "该文件不是可识别的书签 JSON"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeExported",
+                    "source": "Exported to \"${r}\"",
+                    "target": "已导出到「${r}」"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeExportFailed",
+                    "source": "Could not create the export file",
+                    "target": "无法创建导出文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeCleaned",
+                    "source": "Removed ${r} broken bookmark(s)",
+                    "target": "已移除 ${r} 个失效书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeNoBroken",
+                    "source": "No broken bookmarks found",
+                    "target": "未发现失效书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeDupsRemoved",
+                    "source": "Removed ${r} duplicate bookmark(s)",
+                    "target": "已移除 ${r} 个重复书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeNoDups",
+                    "source": "No duplicate bookmarks found",
+                    "target": "未发现重复书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeMovedBm",
+                    "source": "Moved ${r} bookmark(s)",
+                    "target": "已移动 ${r} 个书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeMovedFiles",
+                    "source": "Moved ${r} file(s)",
+                    "target": "已移动 ${r} 个文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeMovedFiles",
+                    "source": ", ${l} failed",
+                    "target": "，${l} 个失败"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeRemoved",
+                    "source": "Removed ${r} bookmark(s)",
+                    "target": "已移除 ${r} 个书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeAdded",
+                    "source": "Bookmarked \"${r}\"",
+                    "target": "已收藏「${r}」"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeAlreadyBookmarked",
+                    "source": "Already bookmarked",
+                    "target": "已收藏过"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeReorderNeedsCustom",
+                    "source": "Switch the sort order to Custom to rearrange by hand",
+                    "target": "请先把排序方式切换为「自定义」，才能手动调整顺序"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeNotBookmarked",
+                    "source": "This file is not bookmarked here",
+                    "target": "此文件未在此处加书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noticeBrokenTarget",
+                    "source": "Bookmark target no longer exists",
+                    "target": "书签指向的目标已不存在"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cmdOpen",
+                    "source": "Open bookmarks panel",
+                    "target": "打开书签面板"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cmdImport",
+                    "source": "Import from core Bookmarks",
+                    "target": "从核心书签导入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cmdImportFile",
+                    "source": "Import from a file",
+                    "target": "从文件导入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cmdExport",
+                    "source": "Export bookmarks to a file",
+                    "target": "导出书签到文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cmdClean",
+                    "source": "Remove broken bookmarks",
+                    "target": "移除失效书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cmdDedupe",
+                    "source": "Remove duplicate bookmarks",
+                    "target": "移除重复书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cmdStats",
+                    "source": "Open bookmark statistics",
+                    "target": "打开书签统计"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cmdBookmarkCurrent",
+                    "source": "Bookmark current file",
+                    "target": "收藏当前文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsTitle",
+                    "source": "Bookmark statistics",
+                    "target": "书签统计"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsTotal",
+                    "source": "Total bookmarks",
+                    "target": "书签总数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsGroups",
+                    "source": "Groups",
+                    "target": "书签组"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsByType",
+                    "source": "By type",
+                    "target": "按类型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsTypeNames.file",
+                    "source": "Files",
+                    "target": "文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsTypeNames.folder",
+                    "source": "Folders",
+                    "target": "文件夹"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsTypeNames.search",
+                    "source": "Searches",
+                    "target": "搜索"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsTypeNames.url",
+                    "source": "URLs",
+                    "target": "链接"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsTypeNames.graph",
+                    "source": "Graphs",
+                    "target": "关系图"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsTypeNames.group",
+                    "source": "Groups",
+                    "target": "书签组"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsPerGroup",
+                    "source": "Bookmarks per group",
+                    "target": "各书签组的书签数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "statsNoData",
+                    "source": "Nothing here yet",
+                    "target": "这里还什么都没有"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cmdReveal",
+                    "source": "Reveal active file in bookmarks",
+                    "target": "在书签中定位当前文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noteCoreExplorer",
+                    "source": "※ Works in the core file explorer",
+                    "target": "※ 作用于核心「文件列表」"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noteCoreSearch",
+                    "source": "※ Works in the core Search pane",
+                    "target": "※ 作用于核心「搜索」面板"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "noteMovesFiles",
+                    "source": "※ Moves real files in your vault",
+                    "target": "※ 会移动库中的真实文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "settingsHighlightName",
+                    "source": "Mark bookmarked files in the file explorer",
+                    "target": "在文件列表中标记已加书签的文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "settingsHighlightDesc",
+                    "source": "Show a small bookmark icon next to bookmarked files and folders. Hidden bookmarks are not marked.",
+                    "target": "在已加书签的文件和文件夹旁显示一个小书签图标。已隐藏的书签不会被标记。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "settingsToolbarHeading",
+                    "source": "Panel toolbar",
+                    "target": "面板工具栏"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "settingsToolbarDesc",
+                    "source": "Choose where each action appears: as a toolbar button, inside the ⋮ menu, or nowhere.",
+                    "target": "为每个操作选择显示位置：作为工具栏按钮、放进 ⋮ 菜单，或不显示。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placementToolbar",
+                    "source": "Toolbar",
+                    "target": "工具栏"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placementMenu",
+                    "source": "⋮ menu",
+                    "target": "⋮ 菜单"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placementHidden",
+                    "source": "Hidden",
+                    "target": "不显示"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.sort",
+                    "source": "Sort order",
+                    "target": "排序方式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.newGroup",
+                    "source": "New group",
+                    "target": "新书签组"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.collapseAll",
+                    "source": "Collapse all",
+                    "target": "全部折叠"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.scrollTop",
+                    "source": "Scroll to top",
+                    "target": "滚动到顶部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.scrollBottom",
+                    "source": "Scroll to bottom",
+                    "target": "滚动到底部"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.resetSort",
+                    "source": "Reset all sort orders",
+                    "target": "重置所有排序"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.batch",
+                    "source": "Select",
+                    "target": "选择"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.stats",
+                    "source": "Statistics",
+                    "target": "统计"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.showHidden",
+                    "source": "Show hidden bookmarks",
+                    "target": "显示已隐藏的书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.import",
+                    "source": "Import from core Bookmarks",
+                    "target": "从核心书签导入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.importFile",
+                    "source": "Import from a file",
+                    "target": "从文件导入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.export",
+                    "source": "Export bookmarks to a file",
+                    "target": "导出书签到文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.dedupe",
+                    "source": "Remove duplicate bookmarks",
+                    "target": "移除重复书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNames.clean",
+                    "source": "Remove broken bookmarks",
+                    "target": "移除失效书签"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNotes.import",
+                    "source": "※ Reads the core Bookmarks plugin",
+                    "target": "※ 读取核心「书签」插件的数据"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "actionNotes.importFile",
+                    "source": "※ Reads a file in your vault",
+                    "target": "※ 读取库中的一个文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "settingsSearchFilterName",
+                    "source": "Bookmark filters in Search",
+                    "target": "「搜索」面板中的书签筛选"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "settingsSearchFilterDesc",
+                    "source": "Add \"Show only bookmarked files\" and \"Hide bookmarked files\" toggles to the filter options.",
+                    "target": "在筛选选项中增加「只显示已加书签的文件」和「隐藏已加书签的文件」两个开关。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "settingsExportFolderName",
+                    "source": "Export folder",
+                    "target": "导出文件夹"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "settingsExportFolderDesc",
+                    "source": "Folder where exported bookmark files are saved. Leave blank to use the vault root; a missing folder is created.",
+                    "target": "导出书签文件保存到的文件夹。留空则使用库的根目录；文件夹不存在时会自动创建。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "settingsExportFolderPlaceholder",
+                    "source": "(vault root)",
+                    "target": "（库根目录）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "untitledGraph",
+                    "source": "Graph",
+                    "target": "关系图"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "brokenBadge",
+                    "source": "missing",
+                    "target": "失效"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "hiddenBadge",
+                    "source": "hidden",
+                    "target": "已隐藏"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "name:\"Rename group\"",
+                    "target": "name:\"Rename group\""
+                }
+            ]
+        }
+    }
+}
