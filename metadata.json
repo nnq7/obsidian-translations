@@ -1,0 +1,15 @@
+[
+    {
+        "id": "-tH5133TvbEgNSrig6a6wo6li6NexdzX",
+        "plugin": "expanded-bookmarks",
+        "language": "zh-cn",
+        "version": "0.3.9",
+        "supported_versions": "0.3.9",
+        "title": "Expanded Bookmarks",
+        "description": "Expanded Bookmarks Localization & Tweaks",
+        "hash": "010713fe010713fe010713fe010713fe",
+        "created_at": "2026-10-05T16:42:33.946Z",
+        "updated_at": "2026-10-05T16:42:33.946Z",
+        "type": "plugin"
+    }
+]
