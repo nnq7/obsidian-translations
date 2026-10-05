@@ -14,6 +14,12 @@
             "ast": [
                 {
                     "type": "ObjectProperty",
+                    "name": "ribbonTooltip",
+                    "source": "Open Expanded Bookmarks",
+                    "target": "打开 Expanded Bookmarks"
+                },
+                {
+                    "type": "ObjectProperty",
                     "name": "moreButton",
                     "source": "More options",
                     "target": "更多选项"
@@ -44,73 +50,67 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "sort.custom",
+                    "name": "custom",
                     "source": "Custom (drag & drop)",
                     "target": "自定义（拖放调整）"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "sort.name",
+                    "name": "name",
                     "source": "Name",
                     "target": "名称"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "sort.added",
+                    "name": "added",
                     "source": "Date bookmarked",
                     "target": "收藏时间"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "sort.mtime",
+                    "name": "mtime",
                     "source": "File modified time",
                     "target": "文件修改时间"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "sort.ctime",
+                    "name": "ctime",
                     "source": "File created time",
                     "target": "文件创建时间"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "sort.ext",
+                    "name": "ext",
                     "source": "File type",
                     "target": "文件类型"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "sortShort.custom",
+                    "name": "custom",
                     "source": "Custom",
                     "target": "自定义"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "sortShort.name",
-                    "source": "Name",
-                    "target": "名称"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "sortShort.added",
+                    "name": "added",
                     "source": "Bookmarked",
                     "target": "收藏时间"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "sortShort.mtime",
+                    "name": "mtime",
                     "source": "Modified",
                     "target": "修改时间"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "sortShort.ctime",
+                    "name": "ctime",
                     "source": "Created",
                     "target": "创建时间"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "sortShort.ext",
+                    "name": "ext",
                     "source": "Type",
                     "target": "类型"
                 },
@@ -196,19 +196,19 @@
                     "type": "ObjectProperty",
                     "name": "menuAddBookmark",
                     "source": "Add to Expanded Bookmarks",
-                    "target": "添加到增强书签"
+                    "target": "添加到 Expanded Bookmarks"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "menuReveal",
                     "source": "Reveal in Expanded Bookmarks",
-                    "target": "在增强书签中定位"
+                    "target": "在 Expanded Bookmarks 中定位"
                 },
                 {
                     "type": "ObjectProperty",
                     "name": "headerTooltip",
                     "source": "Edit in Expanded Bookmarks",
-                    "target": "在增强书签中编辑"
+                    "target": "在 Expanded Bookmarks 中编辑"
                 },
                 {
                     "type": "ObjectProperty",
@@ -251,12 +251,6 @@
                     "name": "btnDelete",
                     "source": "Delete bookmark",
                     "target": "移除书签"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "batchSelected",
-                    "source": "${r} selected",
-                    "target": "${r} 项已选"
                 },
                 {
                     "type": "ObjectProperty",
@@ -338,27 +332,9 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "confirmFileMoveBody",
-                    "source": "Move ${r} file(s) to \"${l}\"? This moves real files in your vault. The bookmarks are unchanged — they follow the files.",
-                    "target": "把 ${r} 个文件移动到「${l}」吗？这会移动你库中的真实文件。书签本身不变——它们会跟随文件。"
-                },
-                {
-                    "type": "ObjectProperty",
                     "name": "confirmRemoveGroupTitle",
                     "source": "Remove group?",
                     "target": "移除书签组？"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "confirmRemoveGroupBody",
-                    "source": "\"${r}\" contains ${l} item(s), which will be removed with it. The files themselves are not deleted.",
-                    "target": "「${r}」里有 ${l} 个条目，会随它一起被移除。文件本身不会被删除。"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "confirmRemoveGroupBody",
-                    "source": "Remove the empty group \"${r}\"?",
-                    "target": "要移除空书签组「${r}」吗？"
                 },
                 {
                     "type": "ObjectProperty",
@@ -368,21 +344,9 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "confirmBatchRemoveBody",
-                    "source": "Remove ${r} selected bookmark(s)? Groups take their contents with them. The files themselves are not deleted.",
-                    "target": "要移除选中的 ${r} 个书签吗？书签组会连同其中的内容一起移除。文件本身不会被删除。"
-                },
-                {
-                    "type": "ObjectProperty",
                     "name": "confirmImportTitle",
                     "source": "Import bookmarks?",
                     "target": "导入书签？"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "confirmImportBody",
-                    "source": "Import from ${r}? Imported items are added on top.",
-                    "target": "要从${r}导入吗？导入的条目会加在最上面。"
                 },
                 {
                     "type": "ObjectProperty",
@@ -398,27 +362,9 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "confirmExportBody",
-                    "source": "Save a JSON file to ${r}? Plugin-only details (color, hidden, per-group sort) are not included.",
-                    "target": "要把 JSON 文件保存到${r}吗？仅本插件使用的信息（颜色、隐藏状态、各组排序）不会被包含。"
-                },
-                {
-                    "type": "ObjectProperty",
                     "name": "exportRootLabel",
                     "source": "the vault root",
                     "target": "库的根目录"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "noticeImported",
-                    "source": "Imported ${r} bookmark(s) from core Bookmarks",
-                    "target": "已从核心书签导入 ${r} 个书签"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "noticeImported",
-                    "source": " (${l} unsupported item(s) skipped)",
-                    "target": "（已跳过 ${l} 个不支持的条目）"
                 },
                 {
                     "type": "ObjectProperty",
@@ -434,21 +380,9 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "noticeExported",
-                    "source": "Exported to \"${r}\"",
-                    "target": "已导出到「${r}」"
-                },
-                {
-                    "type": "ObjectProperty",
                     "name": "noticeExportFailed",
                     "source": "Could not create the export file",
                     "target": "无法创建导出文件"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "noticeCleaned",
-                    "source": "Removed ${r} broken bookmark(s)",
-                    "target": "已移除 ${r} 个失效书签"
                 },
                 {
                     "type": "ObjectProperty",
@@ -458,45 +392,9 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "noticeDupsRemoved",
-                    "source": "Removed ${r} duplicate bookmark(s)",
-                    "target": "已移除 ${r} 个重复书签"
-                },
-                {
-                    "type": "ObjectProperty",
                     "name": "noticeNoDups",
                     "source": "No duplicate bookmarks found",
                     "target": "未发现重复书签"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "noticeMovedBm",
-                    "source": "Moved ${r} bookmark(s)",
-                    "target": "已移动 ${r} 个书签"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "noticeMovedFiles",
-                    "source": "Moved ${r} file(s)",
-                    "target": "已移动 ${r} 个文件"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "noticeMovedFiles",
-                    "source": ", ${l} failed",
-                    "target": "，${l} 个失败"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "noticeRemoved",
-                    "source": "Removed ${r} bookmark(s)",
-                    "target": "已移除 ${r} 个书签"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "noticeAdded",
-                    "source": "Bookmarked \"${r}\"",
-                    "target": "已收藏「${r}」"
                 },
                 {
                     "type": "ObjectProperty",
@@ -596,37 +494,37 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "statsTypeNames.file",
+                    "name": "file",
                     "source": "Files",
                     "target": "文件"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "statsTypeNames.folder",
+                    "name": "folder",
                     "source": "Folders",
                     "target": "文件夹"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "statsTypeNames.search",
+                    "name": "search",
                     "source": "Searches",
                     "target": "搜索"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "statsTypeNames.url",
+                    "name": "url",
                     "source": "URLs",
                     "target": "链接"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "statsTypeNames.graph",
+                    "name": "graph",
                     "source": "Graphs",
                     "target": "关系图"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "statsTypeNames.group",
+                    "name": "group",
                     "source": "Groups",
                     "target": "书签组"
                 },
@@ -710,97 +608,97 @@
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.sort",
+                    "name": "sort",
                     "source": "Sort order",
                     "target": "排序方式"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.newGroup",
+                    "name": "newGroup",
                     "source": "New group",
                     "target": "新书签组"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.collapseAll",
+                    "name": "collapseAll",
                     "source": "Collapse all",
                     "target": "全部折叠"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.scrollTop",
+                    "name": "scrollTop",
                     "source": "Scroll to top",
                     "target": "滚动到顶部"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.scrollBottom",
+                    "name": "scrollBottom",
                     "source": "Scroll to bottom",
                     "target": "滚动到底部"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.resetSort",
+                    "name": "resetSort",
                     "source": "Reset all sort orders",
                     "target": "重置所有排序"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.batch",
+                    "name": "batch",
                     "source": "Select",
                     "target": "选择"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.stats",
+                    "name": "stats",
                     "source": "Statistics",
                     "target": "统计"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.showHidden",
+                    "name": "showHidden",
                     "source": "Show hidden bookmarks",
                     "target": "显示已隐藏的书签"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.import",
+                    "name": "import",
                     "source": "Import from core Bookmarks",
                     "target": "从核心书签导入"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.importFile",
+                    "name": "importFile",
                     "source": "Import from a file",
                     "target": "从文件导入"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.export",
+                    "name": "export",
                     "source": "Export bookmarks to a file",
                     "target": "导出书签到文件"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.dedupe",
+                    "name": "dedupe",
                     "source": "Remove duplicate bookmarks",
                     "target": "移除重复书签"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNames.clean",
+                    "name": "clean",
                     "source": "Remove broken bookmarks",
                     "target": "移除失效书签"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNotes.import",
+                    "name": "import",
                     "source": "※ Reads the core Bookmarks plugin",
                     "target": "※ 读取核心「书签」插件的数据"
                 },
                 {
                     "type": "ObjectProperty",
-                    "name": "actionNotes.importFile",
+                    "name": "importFile",
                     "source": "※ Reads a file in your vault",
                     "target": "※ 读取库中的一个文件"
                 },
@@ -857,6 +755,74 @@
                 {
                     "source": "name:\"Rename group\"",
                     "target": "name:\"Rename group\""
+                },
+                {
+                    "source": "Move ${r} file(s) to \"${l}\"? This moves real files in your vault. The bookmarks are unchanged \\u2014 they follow the files.",
+                    "target": "把 ${r} 个文件移动到「${l}」吗？这会移动你库中的真实文件。书签本身不变——它们会跟随文件。"
+                },
+                {
+                    "source": "Remove ${r} selected bookmark(s)? Groups take their contents with them. The files themselves are not deleted.",
+                    "target": "要移除选中的 ${r} 个书签吗？书签组会连同其中的内容一起移除。文件本身不会被删除。"
+                },
+                {
+                    "source": "\"${r}\" contains ${l} item(s), which will be removed with it. The files themselves are not deleted.",
+                    "target": "「${r}」里有 ${l} 个条目，会随它一起被移除。文件本身不会被删除。"
+                },
+                {
+                    "source": "Save a JSON file to ${r}? Plugin-only details (color, hidden, per-group sort) are not included.",
+                    "target": "要把 JSON 文件保存到${r}吗？仅本插件使用的信息（颜色、隐藏状态、各组排序）不会被包含。"
+                },
+                {
+                    "source": "Import from ${r}? Imported items are added on top.",
+                    "target": "要从${r}导入吗？导入的条目会加在最上面。"
+                },
+                {
+                    "source": "Imported ${r} bookmark(s) from core Bookmarks",
+                    "target": "已从核心书签导入 ${r} 个书签"
+                },
+                {
+                    "source": " (${l} unsupported item(s) skipped)",
+                    "target": "（已跳过 ${l} 个不支持的条目）"
+                },
+                {
+                    "source": "Removed ${r} duplicate bookmark(s)",
+                    "target": "已移除 ${r} 个重复书签"
+                },
+                {
+                    "source": "Removed ${r} broken bookmark(s)",
+                    "target": "已移除 ${r} 个失效书签"
+                },
+                {
+                    "source": "Remove the empty group \"${r}\"?",
+                    "target": "要移除空书签组「${r}」吗？"
+                },
+                {
+                    "source": "Removed ${r} bookmark(s)",
+                    "target": "已移除 ${r} 个书签"
+                },
+                {
+                    "source": "Moved ${r} bookmark(s)",
+                    "target": "已移动 ${r} 个书签"
+                },
+                {
+                    "source": "Exported to \"${r}\"",
+                    "target": "已导出到「${r}」"
+                },
+                {
+                    "source": "Moved ${r} file(s)",
+                    "target": "已移动 ${r} 个文件"
+                },
+                {
+                    "source": "Bookmarked \"${r}\"",
+                    "target": "已收藏「${r}」"
+                },
+                {
+                    "source": "${r} selected",
+                    "target": "${r} 项已选"
+                },
+                {
+                    "source": ", ${l} failed",
+                    "target": "，${l} 个失败"
                 }
             ]
         }
