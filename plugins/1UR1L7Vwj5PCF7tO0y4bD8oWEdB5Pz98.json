@@ -1,0 +1,359 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-admonition",
+        "version": "1.0.0",
+        "title": "Admonition",
+        "description": "Admonition Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "12.0.8",
+        "author": ""
+    },
+    "dict": {
+        "main.js": {
+            "ast": [],
+            "regex": [
+                {
+                    "source": "\"use-snippet.desc\":\"Instead of managing it internally, Admonitions will maintain a CSS snippet to enable your custom types for callouts. Required for correct rendering in popout windows.\"",
+                    "target": "\"use-snippet.desc\":\"Admonition 将改为维护一个 CSS 代码片段来启用你的自定义标注类型，而不是在内部管理。在弹出窗口中正确渲染所必需。\""
+                },
+                {
+                    "source": "\"set-colors.desc\":\"Disable this setting to turn off admonition coloring by default. Can be overridden in the admonition definition.\"",
+                    "target": "\"set-colors.desc\":\"关闭此设置可禁用默认的 admonition 着色。可在 Admonition 定义中单独覆盖。\""
+                },
+                {
+                    "source": "\"color.disabled-global\":\"Color injection is disabled globally. Enable 'Set admonition colors' in plugin settings to use this.\"",
+                    "target": "\"color.disabled-global\":\"颜色注入已在全局禁用。请在插件设置中开启「设置 Admonition 颜色」后再使用。\""
+                },
+                {
+                    "source": "\"Import one or more admonition definitions as a JSON array. An admonition definition should look as follows at minimum:\"",
+                    "target": "\"以 JSON 数组形式导入一个或多个 Admonition 定义。一个 Admonition 定义至少应如下所示：\""
+                },
+                {
+                    "source": "\"export-json.desc\":\"Choose custom types to export as a JSON file that you can then share with other users.\"",
+                    "target": "\"export-json.desc\":\"选择要导出的自定义类型并导出为 JSON 文件，之后可与其他用户共享。\""
+                },
+                {
+                    "source": "\"add-new.desc\":\"Add a new admonition type. All custom admonitions will also be usable as callouts.\"",
+                    "target": "\"add-new.desc\":\"新增一个 Admonition 类型。所有自定义 admonitions 也可用作标注。\""
+                },
+                {
+                    "source": "\"color.disabled-per-admonition\":\"Color is disabled for this admonition type. Style color with CSS.\"",
+                    "target": "\"color.disabled-per-admonition\":\"此 Admonition 类型已禁用颜色。请用 CSS 设置颜色。\""
+                },
+                {
+                    "source": "\"additional-icons.desc\":\"Load an additional icon pack. This requires an internet connection.\"",
+                    "target": "\"additional-icons.desc\":\"加载一个额外的图标包。这需要联网。\""
+                },
+                {
+                    "source": "\"hide-empty.desc\":\"Any admonition that does not have content inside it will be hidden.\"",
+                    "target": "\"hide-empty.desc\":\"任何内部没有内容的 admonition 都会被隐藏。\""
+                },
+                {
+                    "source": "\"You have Admonitions using icons from this pack. Are you sure you want to remove it?\"",
+                    "target": "\"你有 Admonition 正在使用此图标包中的图标。确定要移除吗？\""
+                },
+                {
+                    "source": "\"Could not enable the custom callout snippet; keeping styling in the main document.\"",
+                    "target": "\"无法启用自定义标注 CSS 片段；样式将保留在主文档中。\""
+                },
+                {
+                    "source": "\"error.export-none-selected\":\"At least one admonition must be chosen to export.\"",
+                    "target": "\"error.export-none-selected\":\"至少需要选择一个 admonition 才能导出。\""
+                },
+                {
+                    "source": "`There was an error while importing the admonition${a.length===1?\"\":\"s\"}.`",
+                    "target": "`导入 Admonition 时出错。`"
+                },
+                {
+                    "source": "\"error.admonition-type-missing\":\"No admonition type by that name exists.\"",
+                    "target": "\"error.admonition-type-missing\":\"不存在该名称的 Admonition 类型。\""
+                },
+                {
+                    "source": "\"export-css.desc\":\"Export a CSS snippet for custom callout types.\"",
+                    "target": "\"export-css.desc\":\"导出一个 CSS 代码片段以自定义标注类型。\""
+                },
+                {
+                    "source": "\"drop-shadow.desc\":\"A drop shadow will be added to admonitions.\"",
+                    "target": "\"drop-shadow.desc\":\"将为 admonitions 添加投影。\""
+                },
+                {
+                    "source": "\"admonition-icon.desc\":\"Icon to display next to the title.\"",
+                    "target": "\"admonition-icon.desc\":\"显示在标题旁边的图标。\""
+                },
+                {
+                    "source": "\"modal.title.desc\":\"Leave blank to render without a title.\"",
+                    "target": "\"modal.title.desc\":\"留空则以无标题方式渲染。\""
+                },
+                {
+                    "source": "\"Admonitions: failed to write the custom callout snippet.\"",
+                    "target": "\"Admonitions：写入自定义标注 CSS 片段失败。\""
+                },
+                {
+                    "source": "`${this.injectColor?\"Disable\":\"Enable\"} Admonition Color`",
+                    "target": "`${this.injectColor?\"关闭\":\"启用\"} Admonition 颜色`"
+                },
+                {
+                    "source": "\"use-snippet.name\":\"Use CSS snippet for custom callouts\"",
+                    "target": "\"use-snippet.name\":\"使用 CSS 代码片段自定义标注\""
+                },
+                {
+                    "source": "`There was an issue importing the ${d.type} admonition:`",
+                    "target": "`导入 ${d.type} Admonition 时出错：`"
+                },
+                {
+                    "source": "\"heading.admonitions-callouts\":\"Admonitions & Callouts\"",
+                    "target": "\"heading.admonitions-callouts\":\"Admonitions 与标注\""
+                },
+                {
+                    "source": "\"heading.admonitions-callouts\":\"Admonitions & callouts\"",
+                    "target": "\"heading.admonitions-callouts\":\"Admonitions 与标注\""
+                },
+                {
+                    "source": "\"An admonition must have a title if it is collapsible.\"",
+                    "target": "\"折叠的 Admonition 必须有一个名称。\""
+                },
+                {
+                    "source": "\"heading.additional-syntaxes\":\"Additional syntaxes\"",
+                    "target": "\"heading.additional-syntaxes\":\"附加语法\""
+                },
+                {
+                    "source": "\"error.fix-before-save\":\"Fix errors before saving.\"",
+                    "target": "\"error.fix-before-save\":\"请先修复错误再保存。\""
+                },
+                {
+                    "source": "`The \"${s}\" property must be a boolean if present.`",
+                    "target": "`\"${s}\" 属性如果存在，必须是布尔值。`"
+                },
+                {
+                    "source": "\"export-json.name\":\"Export custom types as JSON\"",
+                    "target": "\"export-json.name\":\"导出自定义类型为 JSON\""
+                },
+                {
+                    "source": "emptyState:\"No custom admonition types defined.\"",
+                    "target": "emptyState:\"未定义自定义 Admonition 类型。\""
+                },
+                {
+                    "source": "\"This is used to create the admonition (e.g.,  \"",
+                    "target": "\"该字符串用于创建 Admonition（例如  \""
+                },
+                {
+                    "source": "\"additional-icons.name\":\"Load additional icons\"",
+                    "target": "\"additional-icons.name\":\"加载额外图标\""
+                },
+                {
+                    "source": "\"export-css.name\":\"Export custom types as CSS\"",
+                    "target": "\"export-css.name\":\"导出自定义类型为 CSS\""
+                },
+                {
+                    "source": "\"There was an issue inserting the admonition.\"",
+                    "target": "\"插入 Admonition 时出错。\""
+                },
+                {
+                    "source": "\"icon-with-css.name\":\"Enable admonition icon\"",
+                    "target": "\"icon-with-css.name\":\"启用 Admonition 图标\""
+                },
+                {
+                    "source": "\"See the plugin ReadMe for more information.\"",
+                    "target": "\"更多信息请参阅插件的 ReadMe。\""
+                },
+                {
+                    "source": "\"color.enabled\":\"Set the admonition color.\"",
+                    "target": "\"color.enabled\":\"设置此 Admonition 的颜色。\""
+                },
+                {
+                    "source": "\"modal.collapsible.name\":\"Make collapsible\"",
+                    "target": "\"modal.collapsible.name\":\"设为可折叠\""
+                },
+                {
+                    "source": "\"hide-empty.name\":\"Hide empty admonitions\"",
+                    "target": "\"hide-empty.name\":\"隐藏空的 admonitions\""
+                },
+                {
+                    "source": "\"set-colors.name\":\"Set admonition colors\"",
+                    "target": "\"set-colors.name\":\"设置 Admonition 颜色\""
+                },
+                {
+                    "source": "\"btn.select-download\":\"Select & download\"",
+                    "target": "\"btn.select-download\":\"选择并下载\""
+                },
+                {
+                    "source": "\"Admonition content copied to clipboard.\"",
+                    "target": "\"Admonition 内容已复制到剪贴板。\""
+                },
+                {
+                    "source": "\"Admonition titles can only be strings.\"",
+                    "target": "\"Admonition 名称只能是字符串。\""
+                },
+                {
+                    "source": "\"settings.title\":\"Admonition settings\"",
+                    "target": "\"settings.title\":\"Admonition 设置\""
+                },
+                {
+                    "source": "\"heading.advanced\":\"Advanced settings\"",
+                    "target": "\"heading.advanced\":\"高级设置\""
+                },
+                {
+                    "source": "\"Callout content copied to clipboard.\"",
+                    "target": "\"标注内容已复制到剪贴板。\""
+                },
+                {
+                    "source": "\"That Admonition type already exists.\"",
+                    "target": "\"该 Admonition 类型已存在。\""
+                },
+                {
+                    "source": "\"modal.title.name\":\"Admonition title\"",
+                    "target": "\"modal.title.name\":\"Admonition 名称\""
+                },
+                {
+                    "source": "\"drop-shadow.name\":\"Add drop shadow\"",
+                    "target": "\"drop-shadow.name\":\"添加投影\""
+                },
+                {
+                    "source": "\"export.deselect-all\":\"Deselect all\"",
+                    "target": "\"export.deselect-all\":\"取消全选\""
+                },
+                {
+                    "source": "\"export.title\":\"Export admonitions\"",
+                    "target": "\"export.title\":\"导出 admonitions\""
+                },
+                {
+                    "source": "\"export.selected\":\"Export selected\"",
+                    "target": "\"export.selected\":\"导出选中项\""
+                },
+                {
+                    "source": "`${O[n]} successfully downloaded.`",
+                    "target": "`${O[n]} 下载成功。`"
+                },
+                {
+                    "source": "\"heading.icon-packs\":\"Icon packs\"",
+                    "target": "\"heading.icon-packs\":\"图标包\""
+                },
+                {
+                    "source": "\"btn.choose-files\":\"Choose files\"",
+                    "target": "\"btn.choose-files\":\"选择文件\""
+                },
+                {
+                    "source": "\"btn.download-all\":\"Download all\"",
+                    "target": "\"btn.download-all\":\"下载全部\""
+                },
+                {
+                    "source": "\"error.no-match\":\"No match found\"",
+                    "target": "\"error.no-match\":\"未找到匹配项\""
+                },
+                {
+                    "source": "\"set-colors.tooltip\":\"Randomize\"",
+                    "target": "\"set-colors.tooltip\":\"随机\""
+                },
+                {
+                    "source": "\"export.select-all\":\"Select all\"",
+                    "target": "\"export.select-all\":\"全选\""
+                },
+                {
+                    "source": "heading:\"Display and behavior\"",
+                    "target": "heading:\"显示与行为\""
+                },
+                {
+                    "source": "\"Could not download icon pack\"",
+                    "target": "\"无法下载图标包\""
+                },
+                {
+                    "source": "\"btn.redownload\":\"Redownload\"",
+                    "target": "\"btn.redownload\":\"重新下载\""
+                },
+                {
+                    "source": "`Insert ${e.type} With Title`",
+                    "target": "`插入 ${e.type}（带标题）`"
+                },
+                {
+                    "source": "\"option.default\":\"Default\"",
+                    "target": "\"option.default\":\"默认\""
+                },
+                {
+                    "source": "`Insert ${e.type} Callout`",
+                    "target": "`插入 ${e.type} 标注`"
+                },
+                {
+                    "source": "heading:\"Import & export\"",
+                    "target": "heading:\"导入与导出\""
+                },
+                {
+                    "source": "createSpan({text:\" or \"})",
+                    "target": "createSpan({text:\" 或 \"})"
+                },
+                {
+                    "source": "\"option.closed\":\"Closed\"",
+                    "target": "\"option.closed\":\"折叠\""
+                },
+                {
+                    "source": "name:\"Insert code block\"",
+                    "target": "name:\"插入代码块\""
+                },
+                {
+                    "source": "\"btn.convert\":\"Convert\"",
+                    "target": "\"btn.convert\":\"转换\""
+                },
+                {
+                    "source": "heading:\"Custom types\"",
+                    "target": "heading:\"自定义类型\""
+                },
+                {
+                    "source": "createSpan({text:\")\"})",
+                    "target": "createSpan({text:\"）\"})"
+                },
+                {
+                    "source": "\"btn.insert\":\"Insert\"",
+                    "target": "\"btn.insert\":\"插入\""
+                },
+                {
+                    "source": "\"btn.cancel\":\"Cancel\"",
+                    "target": "\"btn.cancel\":\"取消\""
+                },
+                {
+                    "source": "name:\"Insert callout\"",
+                    "target": "name:\"插入标注\""
+                },
+                {
+                    "source": "\"option.open\":\"Open\"",
+                    "target": "\"option.open\":\"展开\""
+                },
+                {
+                    "source": "\"option.none\":\"None\"",
+                    "target": "\"option.none\":\"无\""
+                },
+                {
+                    "source": "heading:\"Icon packs\"",
+                    "target": "heading:\"图标包\""
+                },
+                {
+                    "source": "name:\"Collapse all\"",
+                    "target": "name:\"全部折叠\""
+                },
+                {
+                    "source": "heading:\"Advanced\"",
+                    "target": "heading:\"高级\""
+                },
+                {
+                    "source": "`Insert ${e.type}`",
+                    "target": "`插入 ${e.type}`"
+                },
+                {
+                    "source": "\"btn.load\":\"Load\"",
+                    "target": "\"btn.load\":\"加载\""
+                },
+                {
+                    "source": "name:\"Open all\"",
+                    "target": "name:\"全部展开\""
+                },
+                {
+                    "source": "secondary:\"No\"",
+                    "target": "secondary:\"否\""
+                },
+                {
+                    "source": "cta:\"Yes\"",
+                    "target": "cta:\"是\""
+                }
+            ]
+        }
+    }
+}
