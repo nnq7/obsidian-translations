@@ -1,0 +1,1023 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "sync-engine",
+        "version": "1.0.0",
+        "title": "Sync Engine",
+        "description": "Sync Engine Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "3.4.3",
+        "author": ""
+    },
+    "dict": {
+        "main.js": {
+            "ast": [],
+            "regex": [
+                {
+                    "source": "` entries. The Glob rule selects the target set of files, and the sync direction determines how to sync file changes for those files. The same file can be matched by multiple entries, the latest matching entry in the list take the precedence.`",
+                    "target": "` 条目组成。Glob 规则选定目标文件集合，同步方向决定如何同步这些文件的变更。同一文件可被多条条目匹配，列表中最后匹配的条目优先。`"
+                },
+                {
+                    "source": "clearRecordsDescription:`Sync Engine records sync states to resolve sync operations between local and remote files. This option allows you to clear records. Warning: this action is likely to cause changes in sync decisions.`",
+                    "target": "clearRecordsDescription:`Sync Engine 会记录同步状态，用于处理本地与远程文件之间的同步操作。此选项允许你清空这些记录。警告：此操作很可能改变后续的同步决策。`"
+                },
+                {
+                    "source": "maxRequestConcurrencyDescription:`Limit the number of simultaneous requests during synchronization. This option is useful for services with request rate limits. Alter the concurrency limit in the field.`",
+                    "target": "maxRequestConcurrencyDescription:`限制同步过程中同时发起的请求数量。此选项适用于有请求速率限制的服务。请在输入框中修改并发上限。`"
+                },
+                {
+                    "source": "minRequestIntervalDescription:`Limit the minimum time between consecutive requests during synchronization. This option is useful for services with request rate limits. Alter the interval in the field.`",
+                    "target": "minRequestIntervalDescription:`限制同步过程中连续请求之间的最短时间。此选项适用于有请求速率限制的服务。请在输入框中修改间隔。`"
+                },
+                {
+                    "source": "` for how to safely perform a manual migration. For your data safety, Sync Engine does not perform the migration automatically. If you have migrated your cloud storage, you can ignore the warning.`",
+                    "target": "`了解如何安全地手动迁移。为保障数据安全，Sync Engine 不会自动执行迁移。如果你已完成云存储迁移，可以忽略此警告。`"
+                },
+                {
+                    "source": "maxMemoryConsumptionDescription:`Limit the amount of memory used during synchronization. This option is useful for devices with memory limitations. Alter the memory limit in the field.`",
+                    "target": "maxMemoryConsumptionDescription:`限制同步过程中使用的内存量。此选项适用于内存有限的设备。请在输入框中修改内存上限。`"
+                },
+                {
+                    "source": "maxFileSizeDescription:`Skip files exceeding this size during synchronization. This option is useful for services with storage space limitations. Alter the size limit in the field.`",
+                    "target": "maxFileSizeDescription:`同步时跳过超过此大小的文件。此选项适用于有存储空间限制的服务。请在输入框中修改大小上限。`"
+                },
+                {
+                    "source": "conflictResolveStrategyDescription:`Select how to resolve the conflict when both remote and local have been modified since last sync. More strategies can be found in modules.`",
+                    "target": "conflictResolveStrategyDescription:`选择当本地与远程自上次同步后都被修改时如何解决冲突。更多策略可在模块中找到。`"
+                },
+                {
+                    "source": "realtimeSyncDescription:`Trigger syncs automatically as soon as files are modified. Alter the delay between a file being modified and the sync being triggered in the field.`",
+                    "target": "realtimeSyncDescription:`文件一经修改就立即触发同步。请在输入框中修改从文件修改到触发同步之间的延迟。`"
+                },
+                {
+                    "source": "syncStrategyDescription:`Configure different synchronization strategies for different files based on Glob rules. The last rule wins when multiple rules match the same file.`",
+                    "target": "syncStrategyDescription:`基于 Glob 规则为不同文件配置不同的同步策略。当多条规则匹配同一文件时，最后一条生效。`"
+                },
+                {
+                    "source": "confirmDeleteInAutoSyncDescription:`Show a confirmation of local files that will be deleted during auto-triggered syncs. You can choose to delete or re-upload them.`",
+                    "target": "confirmDeleteInAutoSyncDescription:`在自动触发的同步中显示将被删除的本地文件确认。你可以选择删除或重新上传它们。`"
+                },
+                {
+                    "source": "integrityCheckFailed:`Integrity check failed. This module might have been tampered by an external actor. Please reinstall the module if don't know why this happens.`",
+                    "target": "integrityCheckFailed:`完整性校验失败。此模块可能已被外部人员篡改。如果你不清楚原因，请重新安装该模块。`"
+                },
+                {
+                    "source": "`Remote storage will no longer mirror local hierarchical structure. All files will be uploaded flatly to the base directory with random string anchors prepended.`",
+                    "target": "`远程存储将不再镜像本地的层级结构。所有文件都会以随机字符串锚点为前缀，扁平地上传到基础目录。`"
+                },
+                {
+                    "source": "`You can choose \"Configure\" and enable it if it is under your control, or delete it if you don't know where is it from. For an explanation of this warning, see `",
+                    "target": "`如果该模块在你的掌控之下，你可以选择“配置”并启用它；如果不清楚它的来源，请删除它。关于此警告的说明，请参阅`"
+                },
+                {
+                    "source": "focusSyncDescription:`Automatically trigger a sync when you switch Obsidian back to foreground. Alter the minimum gap since the last sync in the field.`",
+                    "target": "focusSyncDescription:`当 Obsidian 切回前台时自动触发同步。可在输入框中调整距上次同步的最小间隔。`"
+                },
+                {
+                    "source": "moduleSourcesDescription:`Edit module sources from which the module catalog is obtained. In this way you can install third-party Sync Engine modules.`",
+                    "target": "moduleSourcesDescription:`编辑用于获取模块目录的模块源，这样你就能安装第三方 Sync Engine 模块。`"
+                },
+                {
+                    "source": "updateDescription:`Set whether the module can receive updates. Alter the source to fetch updates from in the field; empty source means no updates.`",
+                    "target": "updateDescription:`设置模块是否可接收更新。请在输入框中修改获取更新所用的源；留空表示不更新。`"
+                },
+                {
+                    "source": "customHeadersDescription:`Add custom headers to be included with each request, they can either be stored in plaintext or in Obsidian keychain.`",
+                    "target": "customHeadersDescription:`添加随每个请求一起发送的自定义请求头，可明文保存，也可存入 Obsidian 钥匙串。`"
+                },
+                {
+                    "source": "`If you have previously synchronized the vault with this option ${e?`disabled`:`enabled`}, you might need to migrate your remote storage. See `",
+                    "target": "`如果你之前在此选项${e?`关闭`:`开启`}的状态下同步过该仓库，可能需要迁移远程存储。请参阅`"
+                },
+                {
+                    "source": "noticeStatusOnMobileDescription:`Display a notice on mobile devices when synchronization is in progress. Replaces the status bar on desktop.`",
+                    "target": "noticeStatusOnMobileDescription:`在移动设备上于同步进行中显示一条通知。桌面端则改由状态栏显示。`"
+                },
+                {
+                    "source": "moduleManagementDescription:`Manage modules in a dedicated page. You can install, uninstall, update, enable, disable, and edit modules.`",
+                    "target": "moduleManagementDescription:`在独立页面中管理模块。你可以安装、卸载、更新、启用、禁用和编辑模块。`"
+                },
+                {
+                    "source": "someModulesHidden:`Some modules are hidden since Sync Engine plugin is outdated, update to explore the full module catalog.`",
+                    "target": "someModulesHidden:`由于 Sync Engine 插件版本过旧，部分模块已被隐藏，更新后即可浏览完整的模块目录。`"
+                },
+                {
+                    "source": "startupSyncDescription:`Automatically trigger a sync at plugin startup after specified delay. Alter the delay in the field.`",
+                    "target": "startupSyncDescription:`在插件启动后按指定延迟自动触发同步。请在输入框中修改延迟。`"
+                },
+                {
+                    "source": "scheduledSyncDescription:`Periodically trigger synchronizations over specified intervals. Alter the interval in the field.`",
+                    "target": "scheduledSyncDescription:`按指定间隔周期性触发同步。请在输入框中修改间隔。`"
+                },
+                {
+                    "source": "realtimeSyncFastModeDescription:`Speed up realtime sync by reusing cached data and avoid unnecessary remote discovery.`",
+                    "target": "realtimeSyncFastModeDescription:`通过复用已缓存的数据并避免不必要的远程探测来加速实时同步。`"
+                },
+                {
+                    "source": "confirmTasksInSyncDescription:`Show pending operations and execute after confirmation (does not affect auto-sync).`",
+                    "target": "confirmTasksInSyncDescription:`显示待执行的操作，并在确认后执行（不影响自动同步）。`"
+                },
+                {
+                    "source": "avoidAutoSyncWhenOfflineDescription:`Silently skip non-manual sync runs when there's no internet connection.`",
+                    "target": "avoidAutoSyncWhenOfflineDescription:`在没有网络连接时，静默跳过非手动触发的同步。`"
+                },
+                {
+                    "source": "exportLogsDescription:`Export plugin logs to a file in the vault. Set the log export directory in the field.`",
+                    "target": "exportLogsDescription:`将插件日志导出到仓库中的某个文件。在输入框中设置日志导出目录。`"
+                },
+                {
+                    "source": "versionDescription:`Set the version of the module used in update comparison and module card display.`",
+                    "target": "versionDescription:`设置模块版本，用于更新比较与模块卡片显示。`"
+                },
+                {
+                    "source": "`Please confirm the ${e} local ${pe(e)} that will be deleted; unselected items will be re-uploaded.`",
+                    "target": "`请确认将被删除的 ${e} 个本地文件；未勾选的项目会被重新上传。`"
+                },
+                {
+                    "source": "readmePageDescription:`Set the optional README page of the module, leaving empty means no README.`",
+                    "target": "readmePageDescription:`设置模块可选的 README 页面，留空表示没有 README。`"
+                },
+                {
+                    "source": "moduleAutoUpdateDescription:`Automatically update installed modules from module sources.`",
+                    "target": "moduleAutoUpdateDescription:`从模块源自动更新已安装的模块。`"
+                },
+                {
+                    "source": "`If you need the remote to remain readable by humans, please don't enable this feature.`",
+                    "target": "`如果你希望远程端保持人类可读，请不要启用此功能。`"
+                },
+                {
+                    "source": "`Set the icon to be displayed in the module card, a full list of icons can be found in `",
+                    "target": "`设置显示在模块卡片上的图标，完整图标列表见`"
+                },
+                {
+                    "source": "backendDescription:`Select the cloud service to use. Backends are provided by modules.`",
+                    "target": "backendDescription:`选择要使用的云服务。后端由模块提供。`"
+                },
+                {
+                    "source": "`To prevent malicious code execution, Sync Engine now requires your explicit consent. `",
+                    "target": "`为防止恶意代码执行，Sync Engine 现在需要你明确同意。`"
+                },
+                {
+                    "source": "descriptionDescription:`Set the description text to be displayed in the module card.`",
+                    "target": "descriptionDescription:`设置显示在模块卡片上的描述文本。`"
+                },
+                {
+                    "source": "`You should be cautious about following points before disabling asymmetric storage:`",
+                    "target": "`禁用非对称存储前，请留意以下几点：`"
+                },
+                {
+                    "source": "speedLabelDescription:`Properly configuring this setting could improve sync speed.`",
+                    "target": "speedLabelDescription:`正确配置此项可提升同步速度。`"
+                },
+                {
+                    "source": "`You should be cautious about following points before enabling asymmetric storage:`",
+                    "target": "`启用非对称存储前，请留意以下几点：`"
+                },
+                {
+                    "source": "`After enabling, please ensure all devices have asymmetric storage enabled.`",
+                    "target": "`启用后，请确保所有设备都已启用非对称存储。`"
+                },
+                {
+                    "source": "matchLabelDescription:`This setting must be kept the same on all devices.`",
+                    "target": "matchLabelDescription:`此设置必须在所有设备上保持一致。`"
+                },
+                {
+                    "source": "`Discovered ${fe(e,`module`,`modules`)} from ${fe(t,`source`,`sources`)}.`",
+                    "target": "`已从 ${t} 个模块源发现 ${e} 个模块。`"
+                },
+                {
+                    "source": "` starts matching from the vault root, otherwise it matches at any depth.`",
+                    "target": "` 开头的规则从仓库根目录开始匹配，否则在任意深度匹配。`"
+                },
+                {
+                    "source": "maxMemoryConsumptionPlaceholder:`Enter memory limit (e.g. 1GB, 200MB)`",
+                    "target": "maxMemoryConsumptionPlaceholder:`输入内存上限（如 1GB、200MB）`"
+                },
+                {
+                    "source": "` for more detailed explanation of each setting. Labels on settings:`",
+                    "target": "`查看各项设置的详细说明。设置项标签：`"
+                },
+                {
+                    "source": "exportLogsDirectoryPlaceholder:`Set the directory to export logs to`",
+                    "target": "exportLogsDirectoryPlaceholder:`设置日志导出目录`"
+                },
+                {
+                    "source": "nameDescription:`Set the name to be displayed in the module card.`",
+                    "target": "nameDescription:`设置显示在模块卡片上的名称。`"
+                },
+                {
+                    "source": "`All subsequent uploads will mirror local hierarchical structure.`",
+                    "target": "`此后所有上传都会镜像本地的层级结构。`"
+                },
+                {
+                    "source": "writeCodeDescription:`Write your module code here as JavaScript`",
+                    "target": "writeCodeDescription:`在此处以 JavaScript 编写你的模块代码`"
+                },
+                {
+                    "source": "minRequestIntervalPlaceholder:`Enter interval (e.g. 1s, 500ms)`",
+                    "target": "minRequestIntervalPlaceholder:`输入间隔（如 1s、500ms）`"
+                },
+                {
+                    "source": "`Please ensure all devices have asymmetric storage disabled.`",
+                    "target": "`请确保所有设备都已禁用非对称存储。`"
+                },
+                {
+                    "source": "confirmDeleteInAutoSync:`Confirm deletions during auto-sync`",
+                    "target": "confirmDeleteInAutoSync:`自动同步时确认删除`"
+                },
+                {
+                    "source": "maxFileSizePlaceholder:`Enter size limit (e.g. 10MB, 0.5GB)`",
+                    "target": "maxFileSizePlaceholder:`输入大小上限（如 10MB、0.5GB）`"
+                },
+                {
+                    "source": "scheduledSyncPlaceholder:`Enter interval (e.g. 10min, 0.5h)`",
+                    "target": "scheduledSyncPlaceholder:`输入间隔（如 10min、0.5h）`"
+                },
+                {
+                    "source": "`, which is never registered by Sync Engine in this vault. `",
+                    "target": "`，但此仓库中的 Sync Engine 从未注册过它。`"
+                },
+                {
+                    "source": "realtimeSyncPlaceholder:`Enter sync delay (e.g. 500ms, 5s)`",
+                    "target": "realtimeSyncPlaceholder:`输入同步延迟（如 500ms、5s）`"
+                },
+                {
+                    "source": "maxRequestConcurrencyPlaceholder:`Enter concurrency limit`",
+                    "target": "maxRequestConcurrencyPlaceholder:`输入并发上限`"
+                },
+                {
+                    "source": "`protecting you from malicious module replacement attacks`",
+                    "target": "`以防恶意替换模块的攻击`"
+                },
+                {
+                    "source": "focusSyncPlaceholder:`Enter minimum gap (e.g. 30s, 1min)`",
+                    "target": "focusSyncPlaceholder:`输入最小间隔（如 30s、1min）`"
+                },
+                {
+                    "source": "`The sync strategy configuration is an ordered list of `",
+                    "target": "`同步策略配置是一个有序列表，由 `"
+                },
+                {
+                    "source": "`Please review following information before proceeding:`",
+                    "target": "`继续之前请先查看以下信息：`"
+                },
+                {
+                    "source": "avoidAutoSyncWhenOffline:`Avoid auto sync when offline`",
+                    "target": "avoidAutoSyncWhenOffline:`离线时避免自动同步`"
+                },
+                {
+                    "source": "confirmTasksInSync:`Confirm operations in manual sync`",
+                    "target": "confirmTasksInSync:`手动同步时确认操作`"
+                },
+                {
+                    "source": "noInstalledModulesFound:`No installed modules found.`",
+                    "target": "noInstalledModulesFound:`未找到已安装的模块。`"
+                },
+                {
+                    "source": "` as path separator and several wildcard extensions:`",
+                    "target": "` 作为路径分隔符，并支持以下几种通配符扩展：`"
+                },
+                {
+                    "source": "enableDescription:`Set whether to load this module.`",
+                    "target": "enableDescription:`设置是否加载此模块。`"
+                },
+                {
+                    "source": "startNonInteractiveSync:`Start non-interactive sync`",
+                    "target": "startNonInteractiveSync:`开始非交互式同步`"
+                },
+                {
+                    "source": "startupSyncPlaceholder:`Enter delay (e.g. 5s, 1min)`",
+                    "target": "startupSyncPlaceholder:`输入延迟（如 5s、1min）`"
+                },
+                {
+                    "source": "`A Glob rule is drafted as a simple file path with `",
+                    "target": "`Glob 规则由简单的文件路径构成，以 `"
+                },
+                {
+                    "source": "checkConnectionSuccess:`Check connection succeeded`",
+                    "target": "checkConnectionSuccess:`检查连接成功`"
+                },
+                {
+                    "source": "conflictResolveStrategy:`Conflict resolve strategy`",
+                    "target": "conflictResolveStrategy:`冲突解决策略`"
+                },
+                {
+                    "source": "noMatchingModulesFound:`No matching modules found.`",
+                    "target": "noMatchingModulesFound:`未找到匹配的模块。`"
+                },
+                {
+                    "source": "noticeStatusOnMobile:`Notice sync status on mobile`",
+                    "target": "noticeStatusOnMobile:`在移动端显示同步状态通知`"
+                },
+                {
+                    "source": "`matches any listed variants, and braces can nest.`",
+                    "target": "`匹配列出的任一变体，花括号可嵌套。`"
+                },
+                {
+                    "source": "`Verify the hash each time the module is loaded, `",
+                    "target": "`每次加载模块时校验哈希，`"
+                },
+                {
+                    "source": "`Conflict resolve strategy \"${e}\" not installed!`",
+                    "target": "`冲突解决策略“${e}”未安装！`"
+                },
+                {
+                    "source": "`matches any characters within one path segment.`",
+                    "target": "`匹配单个路径段内的任意字符。`"
+                },
+                {
+                    "source": "`matches any number of segments, including none.`",
+                    "target": "`匹配任意数量的路径段，包括零段。`"
+                },
+                {
+                    "source": "`Sync Engine detected an installed module named `",
+                    "target": "`Sync Engine 检测到一个已安装的模块，名为 `"
+                },
+                {
+                    "source": "installModuleFromCode:`Install module from code`",
+                    "target": "installModuleFromCode:`从代码安装模块`"
+                },
+                {
+                    "source": "installModuleFromFile:`Install module from file`",
+                    "target": "installModuleFromFile:`从文件安装模块`"
+                },
+                {
+                    "source": "checkConnectionFailed:`Check connection failed`",
+                    "target": "checkConnectionFailed:`检查连接失败`"
+                },
+                {
+                    "source": "editModuleInformation:`Edit module information`",
+                    "target": "editModuleInformation:`编辑模块信息`"
+                },
+                {
+                    "source": "iconPlaceholder:`Enter icon code (e.g. puzzle)`",
+                    "target": "iconPlaceholder:`输入图标代码（如 puzzle）`"
+                },
+                {
+                    "source": "maxRequestConcurrency:`Max request concurrency`",
+                    "target": "maxRequestConcurrency:`最大请求并发数`"
+                },
+                {
+                    "source": "versionPlaceholder:`Enter version (e.g. 0.0.1)`",
+                    "target": "versionPlaceholder:`输入版本号（如 0.0.1）`"
+                },
+                {
+                    "source": "integrityVerification:`Integrity verification`",
+                    "target": "integrityVerification:`完整性校验`"
+                },
+                {
+                    "source": "noStrategyConfigured:`No strategy configured.`",
+                    "target": "noStrategyConfigured:`尚未配置策略。`"
+                },
+                {
+                    "source": "realtimeSyncFastMode:`Realtime sync fast mode`",
+                    "target": "realtimeSyncFastMode:`实时同步快速模式`"
+                },
+                {
+                    "source": "maxMemoryConsumption:`Max memory consumption`",
+                    "target": "maxMemoryConsumption:`最大内存占用`"
+                },
+                {
+                    "source": "awaitingConfirmation:`Awaiting confirmation`",
+                    "target": "awaitingConfirmation:`等待确认`"
+                },
+                {
+                    "source": "` resolving ${fe(t,`conflict`,`conflicts`)}`",
+                    "target": "`解决 ${t} 个冲突`"
+                },
+                {
+                    "source": "descriptionPlaceholder:`This module is ...`",
+                    "target": "descriptionPlaceholder:`此模块用于……`"
+                },
+                {
+                    "source": "globPlaceholder:`E.g. temp.md, .trash/**/*`",
+                    "target": "globPlaceholder:`例如 temp.md、.trash/**/*`"
+                },
+                {
+                    "source": "namePlaceholder:`Enter module display name`",
+                    "target": "namePlaceholder:`输入模块显示名称`"
+                },
+                {
+                    "source": "noHeaderConfigured:`No header configured.`",
+                    "target": "noHeaderConfigured:`尚未配置请求头。`"
+                },
+                {
+                    "source": "noModulesAvailable:`No modules available.`",
+                    "target": "noModulesAvailable:`没有可用的模块。`"
+                },
+                {
+                    "source": "noSourceConfigured:`No source configured.`",
+                    "target": "noSourceConfigured:`尚未配置模块源。`"
+                },
+                {
+                    "source": "openReadme:`Open the module's README page`",
+                    "target": "openReadme:`打开模块的 README 页面`"
+                },
+                {
+                    "source": "`Thanks for choosing Sync Engine! Access `",
+                    "target": "`感谢选择 Sync Engine！访问`"
+                },
+                {
+                    "source": "minRequestInterval:`Min request interval`",
+                    "target": "minRequestInterval:`最小请求间隔`"
+                },
+                {
+                    "source": "`Invalid module: the file needs to have `",
+                    "target": "`无效模块：文件需要以 `"
+                },
+                {
+                    "source": "`The built-in sync directions including:`",
+                    "target": "`内置的同步方向包括：`"
+                },
+                {
+                    "source": "exportLogsFailed:`Failed to export logs`",
+                    "target": "exportLogsFailed:`导出日志失败`"
+                },
+                {
+                    "source": "pleaseSetBackend:`Please set a backend!`",
+                    "target": "pleaseSetBackend:`请先设置存储后端！`"
+                },
+                {
+                    "source": "renameAndKeepBoth:`Rename and keep both`",
+                    "target": "renameAndKeepBoth:`重命名并保留两者`"
+                },
+                {
+                    "source": "walkingRemote:`Discovering remote files`",
+                    "target": "walkingRemote:`正在发现远程文件`"
+                },
+                {
+                    "source": "showInstalledOnly:`Show installed only`",
+                    "target": "showInstalledOnly:`仅显示已安装`"
+                },
+                {
+                    "source": "` to substantially accelerate syncing.`",
+                    "target": "`可显著加快同步速度。`"
+                },
+                {
+                    "source": "`exclude the matching files from sync.`",
+                    "target": "`将匹配的文件排除在同步之外。`"
+                },
+                {
+                    "source": "asymmetricStorage:`Asymmetric storage`",
+                    "target": "asymmetricStorage:`非对称存储`"
+                },
+                {
+                    "source": "createRemoteDir:`Create remote folder`",
+                    "target": "createRemoteDir:`创建远程文件夹`"
+                },
+                {
+                    "source": "exportLogsToFile:`Export logs to file`",
+                    "target": "exportLogsToFile:`导出日志到文件`"
+                },
+                {
+                    "source": "moduleAutoUpdate:`Auto-update modules`",
+                    "target": "moduleAutoUpdate:`自动更新模块`"
+                },
+                {
+                    "source": "`overwrite remote with local changes.`",
+                    "target": "`用本地变更覆盖远程。`"
+                },
+                {
+                    "source": "`overwrite local with remote changes.`",
+                    "target": "`用远程变更覆盖本地。`"
+                },
+                {
+                    "source": "headerValuePlaceholder:`Header value`",
+                    "target": "headerValuePlaceholder:`请求头值`"
+                },
+                {
+                    "source": "`Sync will execute ${me(e)} in total`",
+                    "target": "`本次同步将执行 ${e} 项操作`"
+                },
+                {
+                    "source": "`matches one character from the set.`",
+                    "target": "`匹配集合中的一个字符。`"
+                },
+                {
+                    "source": "createLocalDir:`Create local folder`",
+                    "target": "createLocalDir:`创建本地文件夹`"
+                },
+                {
+                    "source": "moduleManagement:`Module management`",
+                    "target": "moduleManagement:`模块管理`"
+                },
+                {
+                    "source": "`Failed to fetch source from \"${e}\"`",
+                    "target": "`从“${e}”获取模块源失败`"
+                },
+                {
+                    "source": "addSecretHeader:`Add secret header`",
+                    "target": "addSecretHeader:`添加密钥请求头`"
+                },
+                {
+                    "source": "`Remember to add extensions (e.g. `",
+                    "target": "`匹配文件时记得加上扩展名（例如 `"
+                },
+                {
+                    "source": "checkConnection:`Check connection`",
+                    "target": "checkConnection:`检查连接`"
+                },
+                {
+                    "source": "remoteMigration:`Remote migration`",
+                    "target": "remoteMigration:`远程迁移`"
+                },
+                {
+                    "source": "resolveConflict:`Resolve conflict`",
+                    "target": "resolveConflict:`解决冲突`"
+                },
+                {
+                    "source": "untrustedModule:`Untrusted module`",
+                    "target": "untrustedModule:`不受信任的模块`"
+                },
+                {
+                    "source": "updateAvailable:`Update available`",
+                    "target": "updateAvailable:`有可用更新`"
+                },
+                {
+                    "source": "`Failed to download module \"${e}\"`",
+                    "target": "`下载模块“${e}”失败`"
+                },
+                {
+                    "source": "headerKeyPlaceholder:`Header key`",
+                    "target": "headerKeyPlaceholder:`请求头名称`"
+                },
+                {
+                    "source": "loadingModules:`Loading modules…`",
+                    "target": "loadingModules:`正在加载模块……`"
+                },
+                {
+                    "source": "downloadModule:`Download module`",
+                    "target": "downloadModule:`下载模块`"
+                },
+                {
+                    "source": "recordsCleared:`Records cleared`",
+                    "target": "recordsCleared:`记录已清空`"
+                },
+                {
+                    "source": "refreshSources:`Refresh sources`",
+                    "target": "refreshSources:`刷新模块源`"
+                },
+                {
+                    "source": "`syncs changes from both sides.`",
+                    "target": "`同步双方的变更。`"
+                },
+                {
+                    "source": "latestSurvive:`Latest survives`",
+                    "target": "latestSurvive:`最新者保留`"
+                },
+                {
+                    "source": "`Backend \"${e}\" not installed!`",
+                    "target": "`后端“${e}”未安装！`"
+                },
+                {
+                    "source": "completedNoop:`Already synced`",
+                    "target": "completedNoop:`已同步`"
+                },
+                {
+                    "source": "customHeaders:`Custom headers`",
+                    "target": "customHeaders:`自定义请求头`"
+                },
+                {
+                    "source": "disableModule:`Disable module`",
+                    "target": "disableModule:`禁用模块`"
+                },
+                {
+                    "source": "moduleSources:`Module sources`",
+                    "target": "moduleSources:`模块源`"
+                },
+                {
+                    "source": "scheduledSync:`Scheduled sync`",
+                    "target": "scheduledSync:`定时同步`"
+                },
+                {
+                    "source": "searchModules:`Search modules`",
+                    "target": "searchModules:`搜索模块`"
+                },
+                {
+                    "source": "`${me(e)} failed during sync:`",
+                    "target": "`同步期间 ${e} 项操作失败：`"
+                },
+                {
+                    "source": "`Failed to load module \"${e}\"`",
+                    "target": "`加载模块“${e}”失败`"
+                },
+                {
+                    "source": "`matches one outside the set.`",
+                    "target": "`匹配集合外的一个字符。`"
+                },
+                {
+                    "source": "bidirectional:`Bidirectional`",
+                    "target": "bidirectional:`双向`"
+                },
+                {
+                    "source": "miscellaneous:`Miscellaneous`",
+                    "target": "miscellaneous:`杂项`"
+                },
+                {
+                    "source": "clearRecords:`Clear records`",
+                    "target": "clearRecords:`清空记录`"
+                },
+                {
+                    "source": "deleteModule:`Delete module`",
+                    "target": "deleteModule:`删除模块`"
+                },
+                {
+                    "source": "enableModule:`Enable module`",
+                    "target": "enableModule:`启用模块`"
+                },
+                {
+                    "source": "mirrorRemote:`Mirror remote`",
+                    "target": "mirrorRemote:`镜像远程`"
+                },
+                {
+                    "source": "realtimeSync:`Realtime sync`",
+                    "target": "realtimeSync:`实时同步`"
+                },
+                {
+                    "source": "removeRecord:`Remove record`",
+                    "target": "removeRecord:`移除记录`"
+                },
+                {
+                    "source": "removeRemote:`Remove remote`",
+                    "target": "removeRemote:`删除远程`"
+                },
+                {
+                    "source": "showProgress:`Show progress`",
+                    "target": "showProgress:`显示进度`"
+                },
+                {
+                    "source": "syncProgress:`Sync progress`",
+                    "target": "syncProgress:`同步进度`"
+                },
+                {
+                    "source": "syncStrategy:`Sync strategy`",
+                    "target": "syncStrategy:`同步策略`"
+                },
+                {
+                    "source": "updateModule:`Update module`",
+                    "target": "updateModule:`更新模块`"
+                },
+                {
+                    "source": "maxFileSize:`Max file size`",
+                    "target": "maxFileSize:`最大文件大小`"
+                },
+                {
+                    "source": "`Rules are case-sensitive.`",
+                    "target": "`规则区分大小写。`"
+                },
+                {
+                    "source": "addStrategy:`Add strategy`",
+                    "target": "addStrategy:`添加策略`"
+                },
+                {
+                    "source": "mirrorLocal:`Mirror local`",
+                    "target": "mirrorLocal:`镜像本地`"
+                },
+                {
+                    "source": "removeLocal:`Remove local`",
+                    "target": "removeLocal:`删除本地`"
+                },
+                {
+                    "source": "startupSync:`Startup sync`",
+                    "target": "startupSync:`启动时同步`"
+                },
+                {
+                    "source": "backend:`Storage backend`",
+                    "target": "backend:`存储后端`"
+                },
+                {
+                    "source": "description:`Description`",
+                    "target": "description:`描述`"
+                },
+                {
+                    "source": "development:`Development`",
+                    "target": "development:`开发`"
+                },
+                {
+                    "source": "keepRemote:`Keep remote`",
+                    "target": "keepRemote:`保留远程`"
+                },
+                {
+                    "source": "moveRemote:`Move remote`",
+                    "target": "moveRemote:`移动远程`"
+                },
+                {
+                    "source": "readmePage:`README page`",
+                    "target": "readmePage:`README 页面`"
+                },
+                {
+                    "source": "`matches one character.`",
+                    "target": "`匹配一个字符。`"
+                },
+                {
+                    "source": "` matches folders only.`",
+                    "target": "` 结尾的规则只匹配文件夹。`"
+                },
+                {
+                    "source": "`) when matching files.`",
+                    "target": "`）。`"
+                },
+                {
+                    "source": "` ${r} remote ${pe(r)}`",
+                    "target": "` ${r} 个远程文件`"
+                },
+                {
+                    "source": "`A rule starting with `",
+                    "target": "`以 `"
+                },
+                {
+                    "source": "addHeader:`Add header`",
+                    "target": "addHeader:`添加请求头`"
+                },
+                {
+                    "source": "addRecord:`Add record`",
+                    "target": "addRecord:`添加记录`"
+                },
+                {
+                    "source": "addSource:`Add source`",
+                    "target": "addSource:`添加模块源`"
+                },
+                {
+                    "source": "diffMatchPatch:`Merge`",
+                    "target": "diffMatchPatch:`合并`"
+                },
+                {
+                    "source": "focusSync:`Focus sync`",
+                    "target": "focusSync:`前台同步`"
+                },
+                {
+                    "source": "keepLocal:`Keep local`",
+                    "target": "keepLocal:`保留本地`"
+                },
+                {
+                    "source": "moveLocal:`Move local`",
+                    "target": "moveLocal:`移动本地`"
+                },
+                {
+                    "source": "selectAll:`Select all`",
+                    "target": "selectAll:`全选`"
+                },
+                {
+                    "source": "startSync:`Start sync`",
+                    "target": "startSync:`开始同步`"
+                },
+                {
+                    "source": "writeCode:`Write code`",
+                    "target": "writeCode:`编写代码`"
+                },
+                {
+                    "source": "` ${n} local ${pe(n)}`",
+                    "target": "` ${n} 个本地文件`"
+                },
+                {
+                    "source": "`Lucide Icons catalog`",
+                    "target": "`Lucide 图标目录`"
+                },
+                {
+                    "source": "cancelled:`Cancelled`",
+                    "target": "cancelled:`已取消`"
+                },
+                {
+                    "source": "completed:`Completed`",
+                    "target": "completed:`已完成`"
+                },
+                {
+                    "source": "configure:`Configure`",
+                    "target": "configure:`配置`"
+                },
+                {
+                    "source": "dontSync:`Don't sync`",
+                    "target": "dontSync:`不同步`"
+                },
+                {
+                    "source": "executing:`Executing`",
+                    "target": "executing:`执行中`"
+                },
+                {
+                    "source": "installed:`Installed`",
+                    "target": "installed:`已安装`"
+                },
+                {
+                    "source": "`A rule ending with `",
+                    "target": "`以 `"
+                },
+                {
+                    "source": "stopSync:`Stop sync`",
+                    "target": "stopSync:`停止同步`"
+                },
+                {
+                    "source": "`asymmetric storage`",
+                    "target": "`非对称存储`"
+                },
+                {
+                    "source": "`documentation page`",
+                    "target": "`文档页面`"
+                },
+                {
+                    "source": "`Confirm to toggle?`",
+                    "target": "`确认切换？`"
+                },
+                {
+                    "source": "controls:`Controls`",
+                    "target": "controls:`控制`"
+                },
+                {
+                    "source": "download:`Download`",
+                    "target": "download:`下载`"
+                },
+                {
+                    "source": "features:`Features`",
+                    "target": "features:`功能`"
+                },
+                {
+                    "source": "official:`Official`",
+                    "target": "official:`官方`"
+                },
+                {
+                    "source": "`the documentation`",
+                    "target": "`文档`"
+                },
+                {
+                    "source": ",\"Mirror remote\":`",
+                    "target": ",\"镜像远程\":`"
+                },
+                {
+                    "source": "confirm:`Confirm`",
+                    "target": "confirm:`确认`"
+                },
+                {
+                    "source": "version:`Version`",
+                    "target": "version:`版本`"
+                },
+                {
+                    "source": "warning:`Warning`",
+                    "target": "warning:`警告`"
+                },
+                {
+                    "source": "`${e} configured`",
+                    "target": "`${e} 已配置`"
+                },
+                {
+                    "source": "`${me(e)} failed`",
+                    "target": "`${e} 项操作失败`"
+                },
+                {
+                    "source": "`(${e} selected)`",
+                    "target": "`（已选 ${e} 项）`"
+                },
+                {
+                    "source": ",\"Mirror local\":`",
+                    "target": ",\"镜像本地\":`"
+                },
+                {
+                    "source": "`sync direction`",
+                    "target": "`同步方向`"
+                },
+                {
+                    "source": "{Bidirectional:`",
+                    "target": "{\"双向\":`"
+                },
+                {
+                    "source": "cancel:`Cancel`",
+                    "target": "cancel:`取消`"
+                },
+                {
+                    "source": "delete:`Delete`",
+                    "target": "delete:`删除`"
+                },
+                {
+                    "source": "enable:`Enable`",
+                    "target": "enable:`启用`"
+                },
+                {
+                    "source": "export:`Export`",
+                    "target": "export:`导出`"
+                },
+                {
+                    "source": "failed:`Failed`",
+                    "target": "failed:`失败`"
+                },
+                {
+                    "source": "update:`Update`",
+                    "target": "update:`更新`"
+                },
+                {
+                    "source": "upload:`Upload`",
+                    "target": "upload:`上传`"
+                },
+                {
+                    "source": "`Modified at: `",
+                    "target": "`修改时间：`"
+                },
+                {
+                    "source": ",\"Don't sync\":`",
+                    "target": ",\"不同步\":`"
+                },
+                {
+                    "source": "`Created at: `",
+                    "target": "`创建时间：`"
+                },
+                {
+                    "source": "`${e} enabled`",
+                    "target": "`${e} 已启用`"
+                },
+                {
+                    "source": "clear:`Clear`",
+                    "target": "clear:`清空`"
+                },
+                {
+                    "source": "match:`Match`",
+                    "target": "match:`匹配`"
+                },
+                {
+                    "source": "speed:`Speed`",
+                    "target": "speed:`速度`"
+                },
+                {
+                    "source": "`. Including`",
+                    "target": "`，其中包括`"
+                },
+                {
+                    "source": "` extension.`",
+                    "target": "` 为扩展名。`"
+                },
+                {
+                    "source": "`File name: `",
+                    "target": "`文件名：`"
+                },
+                {
+                    "source": "`File path: `",
+                    "target": "`文件路径：`"
+                },
+                {
+                    "source": "`Glob rules`",
+                    "target": "`Glob 规则`"
+                },
+                {
+                    "source": "done:`Done`",
+                    "target": "done:`完成`"
+                },
+                {
+                    "source": "edit:`Edit`",
+                    "target": "edit:`编辑`"
+                },
+                {
+                    "source": "hide:`Hide`",
+                    "target": "hide:`隐藏`"
+                },
+                {
+                    "source": "icon:`Icon`",
+                    "target": "icon:`图标`"
+                },
+                {
+                    "source": "idle:`Idle`",
+                    "target": "idle:`空闲`"
+                },
+                {
+                    "source": "name:`Name`",
+                    "target": "name:`名称`"
+                },
+                {
+                    "source": "none:`None`",
+                    "target": "none:`无`"
+                },
+                {
+                    "source": "save:`Save`",
+                    "target": "save:`保存`"
+                },
+                {
+                    "source": "skip:`Skip`",
+                    "target": "skip:`跳过`"
+                },
+                {
+                    "source": "` deleting`",
+                    "target": "`删除`"
+                },
+                {
+                    "source": "`Size: `",
+                    "target": "`大小：`"
+                },
+                {
+                    "source": "` plus`",
+                    "target": "`，以及`"
+                },
+                {
+                    "source": "`, and`",
+                    "target": "`，并`"
+                },
+                {
+                    "source": "`Use `",
+                    "target": "`使用`"
+                },
+                {
+                    "source": "` or `",
+                    "target": "` 或 `"
+                },
+                {
+                    "source": "` + `",
+                    "target": "` 和 `"
+                }
+            ]
+        }
+    }
+}
